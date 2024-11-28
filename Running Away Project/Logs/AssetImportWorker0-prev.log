@@ -1,0 +1,1160 @@
+Unity Editor version:    2022.3.16f1 (d2c21f0ef2f1)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.1.1 (Build 24B91)
+Darwin version:          24.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/evanchin/Downloads/Running-Away/Running Away Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57527
+Successfully changed project path to: /Users/evanchin/Downloads/Running-Away/Running Away Project
+/Users/evanchin/Downloads/Running-Away/Running Away Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8583837760] Host "[IP] 192.168.1.225 [Port] 0 [Flags] 2 [Guid] 932274111 [EditorId] 932274111 [Version] 1048832 [Id] OSXEditor(0,MacBookPro) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8583837760] Host "[IP] 192.168.1.225 [Port] 0 [Flags] 2 [Guid] 932274111 [EditorId] 932274111 [Version] 1048832 [Id] OSXEditor(0,MacBookPro) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 14.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path /Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/evanchin/Downloads/Running-Away/Running Away Project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001189 seconds.
+- Loaded All Assemblies, in  0.293 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.175 seconds
+Domain Reload Profiling: 468ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (111ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (109ms)
+			TypeCache.Refresh (108ms)
+				TypeCache.ScanAssembly (95ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (175ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (138ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (98ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.523 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.499 seconds
+Domain Reload Profiling: 1024ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (368ms)
+		LoadAssemblies (239ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (124ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (499ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (402ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (349ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.25 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (51.0 KB). Loaded Objects now: 3553.
+Memory consumption went from 131.1 MB to 131.1 MB.
+Total: 6.189708 ms (FindLiveObjects: 0.207875 ms CreateObjectMapping: 0.071458 ms MarkObjects: 5.473000 ms  DeleteObjects: 0.436958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145464.088975 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(b813d54f53627473293df0385adcf8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(b813d54f53627473293df0385adcf8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c492d0f985fb6731d76ee317c58bd848') in 0.004142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.786744 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii
+  artifactKey: Guid(dd5ada30dccc149f6bffa688f0db93ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii using Guid(dd5ada30dccc149f6bffa688f0db93ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876a141a9845d4cc51dfaa38148052d8') in 0.021295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.014014 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/source
+  artifactKey: Guid(b94febf835fe34ebfbb8073b92198391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/source using Guid(b94febf835fe34ebfbb8073b92198391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c5baf1f584afe34a9d6fe91fe7e924') in 0.001264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.365301 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/source/wfujihas.fbx
+  artifactKey: Guid(c5cf8e1eba3b7428fadbbf10eff3bb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/source/wfujihas.fbx using Guid(c5cf8e1eba3b7428fadbbf10eff3bb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2f6b19fe1cb6495a277b60085bf002') in 2.036731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 501
+========================================================================
+Received Import Request.
+  Time since last request: 6.468949 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures
+  artifactKey: Guid(33931e19be3e3482cb788ddaef3a7258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures using Guid(33931e19be3e3482cb788ddaef3a7258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3f710fa5d65bb353f39cf9f4ddc11c') in 0.000893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.071105 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Acunit2.jpeg
+  artifactKey: Guid(47e50df357e0143f1b481c5dc3802e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Acunit2.jpeg using Guid(47e50df357e0143f1b481c5dc3802e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6c62011a3fb0ca5dd84ca78accf01d') in 0.058984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bark2.jpeg
+  artifactKey: Guid(d17bf6116de2d4dcea6facf52205a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bark2.jpeg using Guid(d17bf6116de2d4dcea6facf52205a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e18bf1cf7ffed8890d0652d7c052a5') in 0.006554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000581 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Grate.jpeg
+  artifactKey: Guid(404386f4b337f480d98e53ab315f075e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Grate.jpeg using Guid(404386f4b337f480d98e53ab315f075e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fab7cf6d9b6feb8472f2c000717170') in 0.007275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg13.jpeg
+  artifactKey: Guid(3d6f4171f609b491c8257f0a2070e79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg13.jpeg using Guid(3d6f4171f609b491c8257f0a2070e79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd989370ecec33627385912ee2c273bb8') in 0.015046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Flags1.jpeg
+  artifactKey: Guid(8c3ceb9cd95b241ccae69ad797ca41da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Flags1.jpeg using Guid(8c3ceb9cd95b241ccae69ad797ca41da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3af04eaa07dc3f04839380498f159d8') in 0.005674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg22.jpeg
+  artifactKey: Guid(029c0c4af6c5448c5a65a02045afc992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg22.jpeg using Guid(029c0c4af6c5448c5a65a02045afc992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd962e748497ab77877738772e9c70a25') in 0.006222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Brick3.jpeg
+  artifactKey: Guid(3f376f8b468ec416f980ac88caf184f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Brick3.jpeg using Guid(3f376f8b468ec416f980ac88caf184f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092acaaaa3a3b2b695dc8af53005305b') in 0.005721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3free1.jpeg
+  artifactKey: Guid(785bcd34a20c74278a1736cb2a8efdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3free1.jpeg using Guid(785bcd34a20c74278a1736cb2a8efdf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e5fd7f4014bcc1af39016ae3b9a439') in 0.004939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3free2.jpeg
+  artifactKey: Guid(fc4d061dc122348f2b1a6d2bd50662f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3free2.jpeg using Guid(fc4d061dc122348f2b1a6d2bd50662f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d2a5f46b521eca5a283b14cb59aaa3') in 0.004534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bark1.jpeg
+  artifactKey: Guid(7d4c29dfefb0942418300ecc0a91d386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bark1.jpeg using Guid(7d4c29dfefb0942418300ecc0a91d386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a28a89459362fff349aaae25df5cfb8') in 0.005204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Brick1_2.jpeg
+  artifactKey: Guid(b3c261de22b2c4d5fb08861de20e8375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Brick1_2.jpeg using Guid(b3c261de22b2c4d5fb08861de20e8375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1868a55033da26a35f420826721a0fde') in 0.005417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Laundry.jpeg
+  artifactKey: Guid(f94bea9eaa2a74faf9a036331b330464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Laundry.jpeg using Guid(f94bea9eaa2a74faf9a036331b330464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fb0b9b7aa78f029bef89ff2b84592e') in 0.005448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Dumpster3.jpeg
+  artifactKey: Guid(4b3257f3646dc4f1b9719a21910d104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Dumpster3.jpeg using Guid(4b3257f3646dc4f1b9719a21910d104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32417df467dde7de44e83ba2fb58b27c') in 0.009452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg12.jpeg
+  artifactKey: Guid(9b044d740f0c14ecab0b930fc039a411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg12.jpeg using Guid(9b044d740f0c14ecab0b930fc039a411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537a164700e23a726f2ddecf2d4ad012') in 0.004722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000868 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Dumpster2.jpeg
+  artifactKey: Guid(b9cdb8d82e6344a468c548d4af422d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Dumpster2.jpeg using Guid(b9cdb8d82e6344a468c548d4af422d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637f01a2028407280f5bdf01aecf34b2') in 0.006697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Ceilinglight.jpeg
+  artifactKey: Guid(fb31b39ef0195416d8b1d17a2d2d35ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Ceilinglight.jpeg using Guid(fb31b39ef0195416d8b1d17a2d2d35ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b025e4c110eaa75726cf49ff1acbbf') in 0.004201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Doors3.jpeg
+  artifactKey: Guid(571b2d70c603e476db9c6092bc599455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Doors3.jpeg using Guid(571b2d70c603e476db9c6092bc599455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255ccc486f6146dd0317fa988673e5c9') in 0.006066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3FallenLeaves.jpeg
+  artifactKey: Guid(adad47cffe9264ef181d81bf75716eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3FallenLeaves.jpeg using Guid(adad47cffe9264ef181d81bf75716eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8c11436361260ce993f7a688dca8e0') in 0.004186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Crete3.jpeg
+  artifactKey: Guid(51017259bb0de474cadba4fab985d01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Crete3.jpeg using Guid(51017259bb0de474cadba4fab985d01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20ae5a6a981f6a4b22fe46ebddafcf2') in 0.004891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg27.jpeg
+  artifactKey: Guid(4fc31694b71504fb4a906fc3db49ff81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Bldg27.jpeg using Guid(4fc31694b71504fb4a906fc3db49ff81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362189f3ab74198c45956c0fa0305e2e') in 0.004667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Doors1.jpeg
+  artifactKey: Guid(0fc8148fd995c4ae58b136e7da8cecde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Doors1.jpeg using Guid(0fc8148fd995c4ae58b136e7da8cecde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e634e474c5aab8a01262fe9b8b8f3c9e') in 0.004907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Bitumen2.jpeg
+  artifactKey: Guid(a60a54e732e2b48f283d0a0ae038a75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Bitumen2.jpeg using Guid(a60a54e732e2b48f283d0a0ae038a75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0881cd9db6fe0b780c8899035afcc9') in 0.005184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Crete2.jpeg
+  artifactKey: Guid(f2c5f16337bcc4e03bb45c77549c64be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Crete2.jpeg using Guid(f2c5f16337bcc4e03bb45c77549c64be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f30d9481db7f9b6d81f63abb056e9dd') in 0.004933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3grass4.jpeg
+  artifactKey: Guid(d084623c9decb42c38a2a210e9cec637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3grass4.jpeg using Guid(d084623c9decb42c38a2a210e9cec637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705e704631b017d063e4f6388025a250') in 0.005382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Brick7.jpeg
+  artifactKey: Guid(4a69c51675f5344d1a3b1c057facbe7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/u3Brick7.jpeg using Guid(4a69c51675f5344d1a3b1c057facbe7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b902163ed6181d656f7abf3cdcf832') in 0.004825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Brick1.jpeg
+  artifactKey: Guid(46391976d1d1346ef96fff154c7f9998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/full-gameready-city-buildings-ii/textures/U3Brick1.jpeg using Guid(46391976d1d1346ef96fff154c7f9998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c769da0385f8585f104f65098199daa') in 0.004365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x319187000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.362 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.835 seconds
+Domain Reload Profiling: 1198ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (201ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (836ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (372ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3084 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.0 KB). Loaded Objects now: 3604.
+Memory consumption went from 143.7 MB to 143.7 MB.
+Total: 3.432042 ms (FindLiveObjects: 0.149084 ms CreateObjectMapping: 0.055709 ms MarkObjects: 3.160500 ms  DeleteObjects: 0.065958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 349.717320 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3ArchWindows.jpeg
+  artifactKey: Guid(96e286c0217c647eebc1afd138f5ecda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3ArchWindows.jpeg using Guid(96e286c0217c647eebc1afd138f5ecda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c9e31c72c192708f8ee8bc65d6201b') in 0.086151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Laundry.jpeg
+  artifactKey: Guid(c9d3f0f7b238d49ac98b2a665df46f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Laundry.jpeg using Guid(c9d3f0f7b238d49ac98b2a665df46f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71811aaf0180a4db2cf81a3f5419d07e') in 0.004997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick1_2.jpeg
+  artifactKey: Guid(9cc4b81bfd8a14669a056720c919e780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick1_2.jpeg using Guid(9cc4b81bfd8a14669a056720c919e780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123f17458981a05309bbfd5c1797258b') in 0.006981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Grate.jpeg
+  artifactKey: Guid(cebab0c57fbeb43d394fd0b5207a1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Grate.jpeg using Guid(cebab0c57fbeb43d394fd0b5207a1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0435b25a9c3a6231a11a33372d9370e4') in 0.009758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg52.jpeg
+  artifactKey: Guid(8ebb5ec3da79e4e619ad4c68563e6cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg52.jpeg using Guid(8ebb5ec3da79e4e619ad4c68563e6cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fe89cb1cc697e45e8e5997955f75d7') in 0.008545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3DirtTile1.jpeg
+  artifactKey: Guid(d819e8997a75b4baf886b6075d2b2ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3DirtTile1.jpeg using Guid(d819e8997a75b4baf886b6075d2b2ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7e6089cbc3d0b7d0e004dea2a0e4cb') in 0.007610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick5.jpeg
+  artifactKey: Guid(cdec5e9e3f3724212bca6ce9b2706222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick5.jpeg using Guid(cdec5e9e3f3724212bca6ce9b2706222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ade32215f402cf21cd2f9cc8569aedc') in 0.007699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Dumpster2.jpeg
+  artifactKey: Guid(7aa4d4170a171409e9ddb5502a555bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Dumpster2.jpeg using Guid(7aa4d4170a171409e9ddb5502a555bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf7b7bef81195d11c58fbc584d17b85') in 0.009225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Crete2.jpeg
+  artifactKey: Guid(f32060135859740fab361aeed9d3f7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Crete2.jpeg using Guid(f32060135859740fab361aeed9d3f7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b67e0e43d7c8314fafb343474a1274') in 0.004941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Flags1.jpeg
+  artifactKey: Guid(46b1796768a64485196303419d9bf419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Flags1.jpeg using Guid(46b1796768a64485196303419d9bf419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a1a75cd8838418a202e4271567fd83') in 0.007623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg5.jpeg
+  artifactKey: Guid(bb4e4bd10a0784b14ae685781faee35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg5.jpeg using Guid(bb4e4bd10a0784b14ae685781faee35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e95cfe5b66227ecb9872d121d4ca97') in 0.008733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Brick7.jpeg
+  artifactKey: Guid(21fa6498bb98945eca6cd934ac73717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Brick7.jpeg using Guid(21fa6498bb98945eca6cd934ac73717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198d88b729b35ebcd23dc683577710d6') in 0.008410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/U3Bitumen2.jpeg
+  artifactKey: Guid(dbd11d37082534f9e97e9a57038c8924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/U3Bitumen2.jpeg using Guid(dbd11d37082534f9e97e9a57038c8924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449030acd72e4131371e7df48a816d38') in 0.008098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg11.jpeg
+  artifactKey: Guid(2ba7cd241fa654e3e8f57950c886c422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg11.jpeg using Guid(2ba7cd241fa654e3e8f57950c886c422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe6ee1d91b6f5e0433397c0dccbbbec') in 0.008207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Beam.jpeg
+  artifactKey: Guid(11ceb40a3940646c9a5d6239545da7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Beam.jpeg using Guid(11ceb40a3940646c9a5d6239545da7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19933a6a3ae65bc212c106cf9b4c0d75') in 0.007807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3boxes.jpeg
+  artifactKey: Guid(dcdcaac91712a44df89a58684570ba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3boxes.jpeg using Guid(dcdcaac91712a44df89a58684570ba9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fdcf5603e5032efcfb38224f9839b8e') in 0.007518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick1.jpeg
+  artifactKey: Guid(0089a80f8cf4b4b1e8a065969c5c3a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/U3Brick1.jpeg using Guid(0089a80f8cf4b4b1e8a065969c5c3a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f609c521f3310b3236c63d80763abf') in 0.004529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Doors3.jpeg
+  artifactKey: Guid(440b075c705fc4072b56e8447462b945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Doors3.jpeg using Guid(440b075c705fc4072b56e8447462b945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee85ae6a36ad456699b1ddf4e8e9b067') in 0.007434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3mail1.jpeg
+  artifactKey: Guid(5cca337f66c094910a59961a6a4b9590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3mail1.jpeg using Guid(5cca337f66c094910a59961a6a4b9590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7927adac835dfa0a244b634bbd167345') in 0.007381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg22.jpeg
+  artifactKey: Guid(c9140d67d1a94416388d46bbf009b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg22.jpeg using Guid(c9140d67d1a94416388d46bbf009b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6606d318c1c5fa693b8bbfaf9b03edbd') in 0.004939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3BldgGrp1.jpeg
+  artifactKey: Guid(0af79d625e57440db9c21936312d1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3BldgGrp1.jpeg using Guid(0af79d625e57440db9c21936312d1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66bfd18e0a963f75de2149309dfeef52') in 0.006849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg7.jpeg
+  artifactKey: Guid(388a05fcbbf2b44de9edcda5498de592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Bldg7.jpeg using Guid(388a05fcbbf2b44de9edcda5498de592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ac5feb5002d8db1d567772e4ab0d8e') in 0.007988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.366212 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3MetalRust.jpeg
+  artifactKey: Guid(a726e360869344b4eac4a17222535b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3MetalRust.jpeg using Guid(a726e360869344b4eac4a17222535b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855ff2cb826b9f6592fa4235961ab006') in 0.032348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3pave2.jpeg
+  artifactKey: Guid(2d71a84bfdb2a4ecd832ea44ad84a301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3pave2.jpeg using Guid(2d71a84bfdb2a4ecd832ea44ad84a301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aae79da8faad6cfd77920db157ef1c3') in 0.005859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs3.jpeg
+  artifactKey: Guid(f40eaa3d4cf2144838bafb8ea6b578b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs3.jpeg using Guid(f40eaa3d4cf2144838bafb8ea6b578b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877e3ac6ec59212a129962a088fd566c') in 0.007300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel12.jpeg
+  artifactKey: Guid(9580435f3827d4fbc8130286d177cdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel12.jpeg using Guid(9580435f3827d4fbc8130286d177cdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae2d6ae78810cb1d6f99806bed00649') in 0.005445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001612 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving4.jpeg
+  artifactKey: Guid(f5e84e2cd5349480e98a576199f232bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving4.jpeg using Guid(f5e84e2cd5349480e98a576199f232bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4833fe64eeaedfebffa318c6eacadf85') in 0.006552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs7.jpeg
+  artifactKey: Guid(87faa868a6ec84d6ca4629ef2203a216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs7.jpeg using Guid(87faa868a6ec84d6ca4629ef2203a216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dcfa03cb3ab0ac48de1e0da7f9149e') in 0.006103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel2.jpeg
+  artifactKey: Guid(3945986a95f9f452c9412ae6900bda02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel2.jpeg using Guid(3945986a95f9f452c9412ae6900bda02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7575440ab84c972ff33dcc7fafe6d403') in 0.004913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3TarmacTile1.jpeg
+  artifactKey: Guid(de2674ba78fd84cdcb007e6937f37a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3TarmacTile1.jpeg using Guid(de2674ba78fd84cdcb007e6937f37a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a68f6f5f5bc43a7acb251d5b54f84eb') in 0.007305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3TreeBarrier.jpeg
+  artifactKey: Guid(ed0d8352e56b3455f84c48e105573060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3TreeBarrier.jpeg using Guid(ed0d8352e56b3455f84c48e105573060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443ff2ef442a8ff6b86cf86632992710') in 0.004708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Vending1.jpeg
+  artifactKey: Guid(d419336a185d142aea598c3170892473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Vending1.jpeg using Guid(d419336a185d142aea598c3170892473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543b4432d0f4d7bcef5da2e9f668c3be') in 0.005341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Vents1.jpeg
+  artifactKey: Guid(b0586dec324104682a49c851b9aa3b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Vents1.jpeg using Guid(b0586dec324104682a49c851b9aa3b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e857c2f15560003fe1b873333481ecef') in 0.006029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving6.jpeg
+  artifactKey: Guid(1c32c5f09965a44b39bfc0623a79c09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving6.jpeg using Guid(1c32c5f09965a44b39bfc0623a79c09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2537cf9ca630857342d50e326375223c') in 0.011548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3SubWayTile.jpeg
+  artifactKey: Guid(63a9c782a21dd4c8698aac2da82e1d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3SubWayTile.jpeg using Guid(63a9c782a21dd4c8698aac2da82e1d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1879bbb1839cd7a79ee9b015e24f2b') in 0.010867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Tower.jpeg
+  artifactKey: Guid(4605d544fc4cb46908b062e6cfc539ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Tower.jpeg using Guid(4605d544fc4cb46908b062e6cfc539ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d79bc485acdb076861033f36bc2045') in 0.005353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Tile3.jpeg
+  artifactKey: Guid(8c2ef6b00f44a4658ab959ce8586a89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Tile3.jpeg using Guid(8c2ef6b00f44a4658ab959ce8586a89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7cb9fbf4a6be50e6d4b4ef05881cd3a') in 0.007508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3RoadEdge.jpeg
+  artifactKey: Guid(21faeeedee80142e599631d25c9b79ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3RoadEdge.jpeg using Guid(21faeeedee80142e599631d25c9b79ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0e600eaed78410f72c5ca76ce77e11') in 0.006331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving3.jpeg
+  artifactKey: Guid(d6e2f9ffaa5df45a5b0c91c8e8e95a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Paving3.jpeg using Guid(d6e2f9ffaa5df45a5b0c91c8e8e95a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba51a5ed0d674c5b6c51bfe6cccc0236') in 0.006823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs5.jpeg
+  artifactKey: Guid(0697bc1cfa0124c6c8da479e47df53a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs5.jpeg using Guid(0697bc1cfa0124c6c8da479e47df53a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaaed732d03aa13948a5bf92c996c6bf') in 0.007672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs2.jpeg
+  artifactKey: Guid(9d6cdb091e9b047a2aaf29b21b91dced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs2.jpeg using Guid(9d6cdb091e9b047a2aaf29b21b91dced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcf36bf161b2c3b0b7ca99cf5aea54d') in 0.004865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel3.jpeg
+  artifactKey: Guid(5f97dd5c38aa94ff2a7647291e7fc216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Panel3.jpeg using Guid(5f97dd5c38aa94ff2a7647291e7fc216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74641e17f82ee7d85bed4a742bb25bcb') in 0.005811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Sewer3.jpeg
+  artifactKey: Guid(c423e8b8e885e4372bb1713fcd1a2117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Sewer3.jpeg using Guid(c423e8b8e885e4372bb1713fcd1a2117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785099c3d14946c50d8fd22cf34d5bf2') in 0.005159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3SubWay.jpeg
+  artifactKey: Guid(228c6de8099c04113882149196ce0e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3SubWay.jpeg using Guid(228c6de8099c04113882149196ce0e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229554a3b22813cf6a61e0b53e17cc53') in 0.005491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001895 seconds.
+  path: Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs9.jpeg
+  artifactKey: Guid(b8c88ac0fa0f849ffbb1bdf4a289840b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/full-gameready-city-buildings-ii/textures/u3Signs9.jpeg using Guid(b8c88ac0fa0f849ffbb1bdf4a289840b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4f5384b41f99b6b319d2d3ce9d6ae4') in 0.008189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x301dc7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.352 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.873 seconds
+Domain Reload Profiling: 1226ms
+	BeginReloadAssembly (108ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (199ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (873ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (379ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3084 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3608.
+Memory consumption went from 154.9 MB to 154.9 MB.
+Total: 3.468667 ms (FindLiveObjects: 0.408166 ms CreateObjectMapping: 0.051750 ms MarkObjects: 2.940917 ms  DeleteObjects: 0.066916 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x301dc7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.325 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.912 seconds
+Domain Reload Profiling: 1237ms
+	BeginReloadAssembly (104ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (174ms)
+		LoadAssemblies (195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (912ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (376ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (320ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3611.
+Memory consumption went from 166.0 MB to 165.9 MB.
+Total: 3.223416 ms (FindLiveObjects: 0.155083 ms CreateObjectMapping: 0.062042 ms MarkObjects: 2.942625 ms  DeleteObjects: 0.063291 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x301dc7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.338 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.936 seconds
+Domain Reload Profiling: 1275ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (184ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (937ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (371ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (315ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3614.
+Memory consumption went from 176.8 MB to 176.8 MB.
+Total: 3.674916 ms (FindLiveObjects: 0.173250 ms CreateObjectMapping: 0.055334 ms MarkObjects: 3.380792 ms  DeleteObjects: 0.064416 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x301dc7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.350 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.842 seconds
+Domain Reload Profiling: 1192ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (219ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (842ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (371ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3617.
+Memory consumption went from 187.6 MB to 187.6 MB.
+Total: 3.096125 ms (FindLiveObjects: 0.157959 ms CreateObjectMapping: 0.056291 ms MarkObjects: 2.808709 ms  DeleteObjects: 0.072625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1724.538055 seconds.
+  path: Assets/_TerrainAutoUpgrade/layer_GR_Dirt1_ASGR_Dirt1_N3d1cca0d6d0e9938.terrainlayer
+  artifactKey: Guid(273b3e5c27efe4fea91b34cf182dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_TerrainAutoUpgrade/layer_GR_Dirt1_ASGR_Dirt1_N3d1cca0d6d0e9938.terrainlayer using Guid(273b3e5c27efe4fea91b34cf182dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda61e95fe55b0b3582068c9d5b75854') in 0.169201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 21.063475 seconds.
+  path: Assets/Maps/Flooded_Grounds/Scenes/PreAsembeld_Buildings.unity
+  artifactKey: Guid(becca19b86da74b4696c89ff8d644228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/Flooded_Grounds/Scenes/PreAsembeld_Buildings.unity using Guid(becca19b86da74b4696c89ff8d644228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9be102c398acd44280289fa8521c66') in 0.003152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.306660 seconds.
+  path: Assets/Maps/Flooded_Grounds/Scenes/Scene_A_Terrain.asset
+  artifactKey: Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/Flooded_Grounds/Scenes/Scene_A_Terrain.asset using Guid(3067f4c4673ebb049b67c5cadc9ef499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to create a destination folder while trying to convert deprecated splats to terrain layers
+ -> (artifact id: '4a0ed93bdc82abdedb8e6ec00b2aa420') in 0.833294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Maps/Flooded_Grounds/Scenes/Scene_A
+  artifactKey: Guid(1ffc1a0556bf73d4ba1d34d2a930ff94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Maps/Flooded_Grounds/Scenes/Scene_A using Guid(1ffc1a0556bf73d4ba1d34d2a930ff94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad862ccabae71325d7abeebf4c1a6b3c') in 0.001557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
