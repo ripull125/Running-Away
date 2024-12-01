@@ -23,14 +23,15 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(healthAmount <= 0) 
+        if (healthAmount <= 0)
         {
             Cursor.visible = true;
             isPaused = true;
             DeathMenu.SetActive(true);
             Time.timeScale = 0f;
         }
-        if(!isPaused) {
+        if (!isPaused)
+        {
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 TakeDamage(20);
@@ -65,16 +66,16 @@ public class HealthManager : MonoBehaviour
         isPaused = false;
     }
 
-    public void QuitGame() 
+    public void QuitGame()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         {
             EditorApplication.isPlaying = false;
         }
-        #else
+#else
         {
             Application.Quit();
         }
-        #endif
+#endif
     }
 }
