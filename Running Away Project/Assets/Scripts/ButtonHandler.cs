@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class ButtonHandler : MonoBehaviour
 {
@@ -9,7 +10,16 @@ public class ButtonHandler : MonoBehaviour
     }
 
     public void QuitGame()
-    {
-        Application.Quit();
+    { 
+        Debug.Log("Quitting");
+        #if UNITY_EDITOR
+        {
+            EditorApplication.isPlaying = false;
+        }
+        #else
+        {
+            Application.Quit();
+        }
+        #endif
     }
 }

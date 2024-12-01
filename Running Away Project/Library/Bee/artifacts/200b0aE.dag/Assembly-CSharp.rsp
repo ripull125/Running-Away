@@ -378,6 +378,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Users/evanchin/Documents/Unity/2022.3.16f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/ChuckECheese/EnemyBehavior.cs"
 "Assets/Maps/Flooded_Grounds/Scripts/DisableRenderer.cs"
 "Assets/Maps/Flooded_Grounds/Scripts/FPSController/CharController_Motor.cs"
 "Assets/Maps/Flooded_Grounds/Scripts/FPSDisplay.cs"
