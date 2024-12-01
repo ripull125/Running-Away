@@ -7,6 +7,7 @@ public class ButtonHandler : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Scene_A");
+        PauseMenu.isPaused = false;
     }
 
     public void QuitGame()
