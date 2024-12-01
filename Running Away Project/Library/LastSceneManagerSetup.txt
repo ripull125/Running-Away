@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Main-Menu.unity
+- path: Assets/Maps/Flooded_Grounds/Scenes/Scene_A.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -10,8 +10,8 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -21,10 +21,6 @@ public class HealthManager : MonoBehaviour
         // {
         //     Application.LoadLevel(Application.loadedLevel);
         // }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            PauseGame();
-        }
         if (Input.GetKeyDown(KeyCode.Return))
         {
             TakeDamage(20);
@@ -48,12 +44,5 @@ public class HealthManager : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
         healthBar.fillAmount = healthAmount / 100f;
-    }
-
-    public void PauseGame()
-    {
-        Time.timeScale = 0f; 
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 }
