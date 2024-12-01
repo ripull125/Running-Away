@@ -35,47 +35,50 @@ public class CharController_Motor : MonoBehaviour
 
 	void Update()
 	{
-		moveFB = Input.GetAxis("Horizontal") * speed;
-		moveLR = Input.GetAxis("Vertical") * speed;
-
-		rotX = Input.GetAxis("Mouse X") * 400;
-		rotY = Input.GetAxis("Mouse Y") * 400;
-
-		Vector3 movement = new Vector3(moveFB, 0, moveLR);
-
-		// Jump Logic
-		if (character.isGrounded)
+		if(!PauseMenu.isPaused) 
 		{
-			yVelocity = 0; // Reset Y velocity when grounded
+			moveFB = Input.GetAxis("Horizontal") * speed;
+			moveLR = Input.GetAxis("Vertical") * speed;
 
-			if (Input.GetKeyDown(KeyCode.Space) && canJump)
+			rotX = Input.GetAxis("Mouse X") * 400;
+			rotY = Input.GetAxis("Mouse Y") * 400;
+
+			Vector3 movement = new Vector3(moveFB, 0, moveLR);
+
+			// Jump Logic
+			if (character.isGrounded)
 			{
-				yVelocity = Mathf.Sqrt(-2 * jumpHeight * gravity);
-				canJump = false; // Disable jumping
-				Invoke(nameof(ResetJumpCooldown), jumpCooldown); // Schedule cooldown reset
+				yVelocity = 0; // Reset Y velocity when grounded
+
+				if (Input.GetKeyDown(KeyCode.Space) && canJump)
+				{
+					yVelocity = Mathf.Sqrt(-2 * jumpHeight * gravity);
+					canJump = false; // Disable jumping
+					Invoke(nameof(ResetJumpCooldown), jumpCooldown); // Schedule cooldown reset
+				}
 			}
-		}
-		else
-		{
-			yVelocity += gravity * Time.deltaTime; // Apply gravity when in the air
-		}
+			else
+			{
+				yVelocity += gravity * Time.deltaTime; // Apply gravity when in the air
+			}
 
-		movement.y = yVelocity; // Add Y-axis movement to the final vector
+			movement.y = yVelocity; // Add Y-axis movement to the final vector
 
-		movement = transform.rotation * movement;
-		character.Move(movement * Time.deltaTime);
+			movement = transform.rotation * movement;
+			character.Move(movement * Time.deltaTime);
 
-		// Camera rotation
-		if (webGLRightClickRotation)
-		{
-			if (Input.GetKey(KeyCode.Mouse0))
+			// Camera rotation
+			if (webGLRightClickRotation)
+			{
+				if (Input.GetKey(KeyCode.Mouse0))
+				{
+					CameraRotation(cam, rotX, rotY);
+				}
+			}
+			else
 			{
 				CameraRotation(cam, rotX, rotY);
 			}
-		}
-		else
-		{
-			CameraRotation(cam, rotX, rotY);
 		}
 	}
 
