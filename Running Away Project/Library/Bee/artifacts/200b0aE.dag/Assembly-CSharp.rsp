@@ -385,6 +385,7 @@
 "Assets/Maps/Flooded_Grounds/Scripts/WaterFloat.cs"
 "Assets/Scripts/ButtonHandler.cs"
 "Assets/Scripts/HealthManager.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
