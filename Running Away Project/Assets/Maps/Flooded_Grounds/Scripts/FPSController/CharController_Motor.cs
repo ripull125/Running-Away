@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CharController_Motor : MonoBehaviour
 {
 	public float speed = 10.0f;
 	public float jumpHeight = 2.0f;
-	public float gravity = -9.8f;
+    private float originalSpeed = 10.0f;
+    private float originalJumpHeight = 2.0f;
+    public bool isBoosted = false;
+    public float gravity = -9.8f;
 	private float yVelocity = 0.0f;
 
 	private CharacterController character;
@@ -20,6 +24,8 @@ public class CharController_Motor : MonoBehaviour
 	void Start()
 	{
 		character = GetComponent<CharacterController>();
+		speed = originalSpeed;
+		jumpHeight = originalJumpHeight;
 
 		if (Application.isEditor)
 		{
@@ -83,4 +89,25 @@ public class CharController_Motor : MonoBehaviour
 	{
 		canJump = true; // Allow jumping again
 	}
+
+    public void BoostSpeedAndJump(float newSpeed, float newJumpHeight, int seconds)
+    {
+        if (!isBoosted)
+        {
+            StartCoroutine(ApplyBoost(newSpeed, newJumpHeight, seconds));
+        }
+    }
+
+    private IEnumerator ApplyBoost(float newSpeed, float newJumpHeight, int seconds)
+    {
+        isBoosted = true;
+        speed = newSpeed;
+        jumpHeight = newJumpHeight;
+
+        yield return new WaitForSeconds(seconds);
+
+        speed = originalSpeed;
+        jumpHeight = originalJumpHeight;
+        isBoosted = false;
+    }
 }
