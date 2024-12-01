@@ -1,44 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CharController_Motor : MonoBehaviour
 {
-
 	public float speed = 10.0f;
-	public float WaterHeight = 15.5f;
-	CharacterController character;
+	public float jumpHeight = 2.0f;
+	public float gravity = -9.8f;
+	private float yVelocity = 0.0f;
+
+	private CharacterController character;
 	public GameObject cam;
+
 	float moveFB, moveLR;
 	float rotX, rotY;
 	public bool webGLRightClickRotation = true;
-	float gravity = -9.8f;
 
+	private bool canJump = true; // Cooldown flag
+	private float jumpCooldown = 5.0f; // Cooldown duration
 
 	void Start()
 	{
-		//LockCursor ();
 		character = GetComponent<CharacterController>();
+
 		if (Application.isEditor)
 		{
 			webGLRightClickRotation = false;
 		}
 	}
-
-
-	void CheckForWaterHeight()
-	{
-		if (transform.position.y < WaterHeight)
-		{
-			gravity = 0f;
-		}
-		else
-		{
-			gravity = -9.8f;
-		}
-	}
-
-
 
 	void Update()
 	{
@@ -48,16 +35,31 @@ public class CharController_Motor : MonoBehaviour
 		rotX = Input.GetAxis("Mouse X") * 400;
 		rotY = Input.GetAxis("Mouse Y") * 400;
 
-		//rotX = Input.GetKey (KeyCode.Joystick1Button4);
-		//rotY = Input.GetKey (KeyCode.Joystick1Button5);
+		Vector3 movement = new Vector3(moveFB, 0, moveLR);
 
-		CheckForWaterHeight();
+		// Jump Logic
+		if (character.isGrounded)
+		{
+			yVelocity = 0; // Reset Y velocity when grounded
 
+			if (Input.GetKeyDown(KeyCode.Space) && canJump)
+			{
+				yVelocity = Mathf.Sqrt(-2 * jumpHeight * gravity);
+				canJump = false; // Disable jumping
+				Invoke(nameof(ResetJumpCooldown), jumpCooldown); // Schedule cooldown reset
+			}
+		}
+		else
+		{
+			yVelocity += gravity * Time.deltaTime; // Apply gravity when in the air
+		}
 
-		Vector3 movement = new Vector3(moveFB, gravity, moveLR);
+		movement.y = yVelocity; // Add Y-axis movement to the final vector
 
+		movement = transform.rotation * movement;
+		character.Move(movement * Time.deltaTime);
 
-
+		// Camera rotation
 		if (webGLRightClickRotation)
 		{
 			if (Input.GetKey(KeyCode.Mouse0))
@@ -65,15 +67,11 @@ public class CharController_Motor : MonoBehaviour
 				CameraRotation(cam, rotX, rotY);
 			}
 		}
-		else if (!webGLRightClickRotation)
+		else
 		{
 			CameraRotation(cam, rotX, rotY);
 		}
-
-		movement = transform.rotation * movement;
-		character.Move(movement * Time.deltaTime);
 	}
-
 
 	void CameraRotation(GameObject cam, float rotX, float rotY)
 	{
@@ -81,7 +79,8 @@ public class CharController_Motor : MonoBehaviour
 		cam.transform.Rotate(-rotY * Time.deltaTime, 0, 0);
 	}
 
-
-
-
+	void ResetJumpCooldown()
+	{
+		canJump = true; // Allow jumping again
+	}
 }
