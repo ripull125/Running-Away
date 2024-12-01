@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    public void QuitGame() 
+    public void QuitGame()
     {
         #if UNITY_EDITOR
         {
