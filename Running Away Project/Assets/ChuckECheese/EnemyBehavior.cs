@@ -9,9 +9,11 @@ public class EnemyBehavior : MonoBehaviour
     public Rigidbody rb;
     private bool notice = false;
     private float timeLeft;
+    private int encounters;
 
     void Start()
     {
+        encounters = 5;
         timeLeft = 0.0f;
         rb = GetComponent<Rigidbody>();
         transform.position = SpawnNearPlayer(25, 45);
@@ -29,13 +31,13 @@ public class EnemyBehavior : MonoBehaviour
     {
         EnemyState state = DetermineState();
 
-        //Debug.Log(Vector3.Distance(transform.position, playerTransform.position));
-        Debug.Log(timeLeft);
+        Debug.Log(Vector3.Distance(transform.position, playerTransform.position));
+        //Debug.Log(timeLeft);
         
         switch (state)
         {
             case EnemyState.Chase:
-                moveSpeed = 13f;
+                moveSpeed = 12f;
                 TrackPlayer();
                 break;
             case EnemyState.Stalk:
@@ -46,7 +48,12 @@ public class EnemyBehavior : MonoBehaviour
                 moveSpeed = 5f;
                 break;
             case EnemyState.Far:
-                transform.position = SpawnNearPlayer(30, 50);
+                if (encounters > 0) {
+                    transform.position = SpawnNearPlayer(30, 50);
+                } else {
+                    transform.position = SpawnNearPlayer(5, 10);
+                    encounters = 5;
+                }
                 Debug.Log(Vector3.Distance(playerTransform.position,transform.position));
                 break;
         }
@@ -58,9 +65,9 @@ public class EnemyBehavior : MonoBehaviour
                 notice = false;
                 timeLeft = Random.Range(10,15);
             }
-            if (Vector3.Distance(transform.position, playerTransform.position) < 1.5f) {
-                transform.position = SpawnOnPlayer();
-            }
+            //if (Vector3.Distance(transform.position, playerTransform.position) < 1.5f) {
+            //    transform.position = SpawnOnPlayer();
+            //}
         }
         if (!notice) {
             timeLeft -= Time.deltaTime;
@@ -107,8 +114,10 @@ public class EnemyBehavior : MonoBehaviour
 
     Vector3 SpawnNearPlayer(int lower, int higher)
     {
+        encounters --;
         float distance = Random.Range(lower,higher);
-        return new Vector3(Random.Range(playerTransform.position.x - distance,playerTransform.position.x + distance), playerTransform.position.y, Random.Range(playerTransform.position.z - distance,playerTransform.position.z + distance));
+        rb.velocity = Vector3.zero;
+        return new Vector3(Random.Range(playerTransform.position.x - distance,playerTransform.position.x + distance), playerTransform.position.y + 15, Random.Range(playerTransform.position.z - distance,playerTransform.position.z + distance));
     }
 
     Vector3 SpawnOnPlayer()
