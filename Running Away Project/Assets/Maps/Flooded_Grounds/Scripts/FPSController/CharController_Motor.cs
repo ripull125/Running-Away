@@ -103,6 +103,7 @@ public class CharController_Motor : MonoBehaviour
 
     private IEnumerator ApplyBoost(float newSpeed, float newJumpHeight, int seconds)
     {
+		Debug.Log("boost applied with seconds: " + seconds + "");
         isBoosted = true;
         speed = newSpeed;
         jumpHeight = newJumpHeight;

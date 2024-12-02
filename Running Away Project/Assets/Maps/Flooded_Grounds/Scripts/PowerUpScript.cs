@@ -21,10 +21,6 @@ public class PowerUpScript : MonoBehaviour
             {
                 controller.BoostSpeedAndJump(newSpeed, newJumpHeight, applySeconds);
             }
-
-            // Move PowerUp to a random position
-            //int randomIndex = Random.Range(0, randomPositions.Length);
-            //transform.position = randomPositions[randomIndex];
         }
     }
 }
