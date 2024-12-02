@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
+        gameObject.SetActive(false);
         failSpawn = 0;
         rb = GetComponent<Rigidbody>();
         transform.position = SpawnNearPlayer(25, 45);
