@@ -7,13 +7,13 @@ public class EnemyBehavior : MonoBehaviour
     public Transform playerTransform;
     public float moveSpeed = 2f;
     public Rigidbody rb;
+    public GameObject GameEnd;
     private float timeLeft;
     private int failSpawn;
     private float groundCheckDistance = 0.5f;
 
     void Start()
     {
-        gameObject.SetActive(false);
         failSpawn = 0;
         rb = GetComponent<Rigidbody>();
         transform.position = SpawnNearPlayer(25, 45);
@@ -31,18 +31,18 @@ public class EnemyBehavior : MonoBehaviour
     {
         EnemyState state = DetermineState();
 
-        Debug.Log("" + Vector3.Distance(transform.position, playerTransform.position)+ " " + state);
+        //Debug.Log("--- ChuckE: " + Vector3.Distance(transform.position, playerTransform.position)+ " " + state);
         //Debug.Log(Vector3.Distance(transform.position, playerTransform.position));
         //Debug.Log(timeLeft);
         
         switch (state)
         {
             case EnemyState.Chase:
-                moveSpeed = 12f;
+                moveSpeed = 1.8f;
                 TrackPlayer();
                 break;
             case EnemyState.Stalk:
-                moveSpeed = 9f;
+                moveSpeed = 1.5f;
                 TrackPlayer();
                 break;
             case EnemyState.Wander:
@@ -50,7 +50,7 @@ public class EnemyBehavior : MonoBehaviour
                 if (timeLeft <= 0) {
                     transform.position = SpawnNearPlayer(30,50);
                 }
-                moveSpeed = 5f;
+                moveSpeed = 1f;
                 break;
             case EnemyState.Far:
                 if (transform.position.y < -50) {
@@ -65,7 +65,7 @@ public class EnemyBehavior : MonoBehaviour
 
         if (IsGrounded() && Mathf.Abs(playerTransform.position.y - transform.position.y) > 10) {
             failSpawn = 0;
-            moveSpeed = 14f;
+            moveSpeed = 1.8f;
             rb.velocity = new Vector3(0,7,0);
         }
     }
@@ -93,9 +93,12 @@ public class EnemyBehavior : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("FpsController")) {
-            transform.position = SpawnOnPlayer();
-            Debug.Log(transform.position);
+        if (other.CompareTag("Player")) {
+            Debug.Log("ChuckE Touched the player! Game Over!");
+            GameEnd.SetActive(true);
+            moveSpeed = 0f;
+            //transform.position = SpawnOnPlayer();
+            //Debug.Log(transform.position);
         }
     }
 
