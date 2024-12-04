@@ -32,7 +32,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int GetKeyCounts() {
+    public int GetKeyCounts()
+    {
         return keysCollected;
     }
 
@@ -52,7 +53,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("enabling the exit door");
             door.SetActive(true);
-        } else
+        }
+        else
         {
             Debug.Log("door is not there");
         }
