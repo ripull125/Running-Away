@@ -11,6 +11,8 @@ public class CharController_Motor : MonoBehaviour
     public float gravity = -9.8f;
 	private float yVelocity = 0.0f;
 
+	public float health;
+
 	private CharacterController character;
 	public GameObject cam;
 
@@ -23,6 +25,8 @@ public class CharController_Motor : MonoBehaviour
 
 	void Start()
 	{
+		health = 100f;
+		
 		character = GetComponent<CharacterController>();
 		speed = originalSpeed;
 		jumpHeight = originalJumpHeight;
@@ -35,50 +39,40 @@ public class CharController_Motor : MonoBehaviour
 
 	void Update()
 	{
-		if(!PauseMenu.isPaused) 
+		moveFB = Input.GetAxis("Horizontal") * speed;
+		moveLR = Input.GetAxis("Vertical") * speed;
+
+		rotX = Input.GetAxis("Mouse X") * 400;
+		rotY = Input.GetAxis("Mouse Y") * 400;
+
+		//rotX = Input.GetKey (KeyCode.Joystick1Button4);
+		//rotY = Input.GetKey (KeyCode.Joystick1Button5);
+
+
+		Vector3 movement = new Vector3(moveFB, gravity, moveLR);
+
+
+
+		if (webGLRightClickRotation)
 		{
-			moveFB = Input.GetAxis("Horizontal") * speed;
-			moveLR = Input.GetAxis("Vertical") * speed;
-
-			rotX = Input.GetAxis("Mouse X") * 400;
-			rotY = Input.GetAxis("Mouse Y") * 400;
-
-			Vector3 movement = new Vector3(moveFB, 0, moveLR);
-
-			// Jump Logic
-			if (character.isGrounded)
-			{
-				yVelocity = 0; // Reset Y velocity when grounded
-
-				if (Input.GetKeyDown(KeyCode.Space) && canJump)
-				{
-					yVelocity = Mathf.Sqrt(-2 * jumpHeight * gravity);
-					canJump = false; // Disable jumping
-					Invoke(nameof(ResetJumpCooldown), jumpCooldown); // Schedule cooldown reset
-				}
-			}
-			else
-			{
-				yVelocity += gravity * Time.deltaTime; // Apply gravity when in the air
-			}
-
-			movement.y = yVelocity; // Add Y-axis movement to the final vector
-
-			movement = transform.rotation * movement;
-			character.Move(movement * Time.deltaTime);
-
-			// Camera rotation
-			if (webGLRightClickRotation)
-			{
-				if (Input.GetKey(KeyCode.Mouse0))
-				{
-					CameraRotation(cam, rotX, rotY);
-				}
-			}
-			else
+			if (Input.GetKey(KeyCode.Mouse0))
 			{
 				CameraRotation(cam, rotX, rotY);
 			}
+		}
+		else if (!webGLRightClickRotation)
+		{
+			CameraRotation(cam, rotX, rotY);
+		}
+
+		movement = transform.rotation * movement;
+		character.Move(movement * Time.deltaTime);
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Enemy")) {
+			health -= 34;
 		}
 	}
 
