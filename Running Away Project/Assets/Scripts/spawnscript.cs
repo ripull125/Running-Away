@@ -9,7 +9,7 @@ public class spawnscript : MonoBehaviour
     void Start()
     {
         Debug.Log("this is the test");
-        InvokeRepeating("SpawnEnemy", 10,30);
+        InvokeRepeating("SpawnEnemy", 10,10);
     }
 
     private void SpawnEnemy()

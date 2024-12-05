@@ -42,11 +42,11 @@ public class EnemyBehavior : MonoBehaviour
         switch (state)
         {
             case EnemyState.Chase:
-                moveSpeed = 1.8f;
+                moveSpeed = 8f;
                 TrackPlayer();
                 break;
             case EnemyState.Stalk:
-                moveSpeed = 1.5f;
+                moveSpeed = 6f;
                 TrackPlayer();
                 break;
             case EnemyState.Wander:
@@ -54,7 +54,7 @@ public class EnemyBehavior : MonoBehaviour
                 if (timeLeft <= 0) {
                     transform.position = SpawnNearPlayer(30,50);
                 }
-                moveSpeed = 1f;
+                moveSpeed = 4f;
                 break;
             case EnemyState.Far:
                 if (transform.position.y < -50) {
@@ -98,11 +98,12 @@ public class EnemyBehavior : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) {
-            Debug.Log("ChuckE Touched the player! Game Over!");
-            GameEnd.SetActive(true);
-            moveSpeed = 0f;
+            //Debug.Log("ChuckE Touched the player! Game Over!");
+            //GameEnd.SetActive(true);
+            //moveSpeed = 0f;
             //transform.position = SpawnOnPlayer();
             //Debug.Log(transform.position);
+            SpawnOnPlayer();
         }
     }
 
@@ -118,7 +119,7 @@ public class EnemyBehavior : MonoBehaviour
         transform.LookAt(lookTarget);
 
         // Move the enemy in the direction of the player
-        rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + direction * moveSpeed * Time.deltaTime);
     }
 
     Vector3 SpawnNearPlayer(int lower, int higher)

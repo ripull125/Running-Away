@@ -7,6 +7,7 @@ using UnityEditor;
 
 public class HealthManager : MonoBehaviour
 {
+    private CharController_Motor player;
     public Image healthBar;
     public GameObject DeathMenu;
     public static bool isPaused;
@@ -17,6 +18,7 @@ public class HealthManager : MonoBehaviour
         // Cursor.visible = false;
         // Cursor.lockState = CursorLockMode.Locked;
         DeathMenu.SetActive(false);
+        player = GameObject.Find("FpsController").GetComponent<CharController_Motor>();
         isPaused = false;
     }
 
@@ -30,18 +32,7 @@ public class HealthManager : MonoBehaviour
             DeathMenu.SetActive(true);
             Time.timeScale = 0f;
         }
-        if (!isPaused)
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                TakeDamage(20);
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Heal(5);
-            }
-        }
+        healthBar.fillAmount = player.health / 100f;
     }
 
     public void TakeDamage(float damage)
