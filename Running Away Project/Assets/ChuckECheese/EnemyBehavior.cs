@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
     public Transform playerTransform;
+    private GameObject player;
     public float moveSpeed = 2f;
     public Rigidbody rb;
     private float timeLeft;
@@ -13,9 +14,11 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
         failSpawn = 0;
         rb = GetComponent<Rigidbody>();
+        player = GameObject.Find("FpsController");
+        playerTransform = player.transform;
         transform.position = SpawnNearPlayer(25, 45);
     }
 
@@ -31,7 +34,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         EnemyState state = DetermineState();
 
-        Debug.Log("" + Vector3.Distance(transform.position, playerTransform.position)+ " " + state);
+        //Debug.Log("" + Vector3.Distance(transform.position, playerTransform.position)+ " " + state);
         //Debug.Log(Vector3.Distance(transform.position, playerTransform.position));
         //Debug.Log(timeLeft);
         
